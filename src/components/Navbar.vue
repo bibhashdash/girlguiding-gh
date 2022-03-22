@@ -89,9 +89,10 @@ export default {};
 <style>
 #nav {
   background: linear-gradient(to bottom, #c40064, #4e88c7);
-  padding: 10px 10%;
+  padding: 10px 5%;
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 #nav a {
@@ -106,24 +107,33 @@ export default {};
 .logo {
   width: 100px;
 }
+
 .dropdown-menu {
   background-color: transparent !important;
+  max-width: 200px;
 }
+.dropdown-item:hover {
+  background-color: transparent !important;
+  border: 1px solid rgba(199, 199, 199, 0.452);
+}
+
 .nav-cta {
   background-color: #c40064;
   border-radius: 5px;
   width: auto;
   text-align: center;
+  max-width: 200px;
 }
 @media all and (min-width: 992px) {
   #nav {
     background: linear-gradient(to right, #c40064, #4e88c7);
+    padding: 10px 10%;
   }
   .navbar-collapse {
     justify-content: flex-end;
   }
-  li {
-    margin-left: 40px;
+  .nav-item {
+    margin-right: 10px;
   }
   .dropdown-menu {
     background-color: #c40064 !important;
@@ -131,6 +141,7 @@ export default {};
   .dropdown-menu li {
     margin-left: 0;
   }
+
   .nav-cta {
     width: 100px;
   }
