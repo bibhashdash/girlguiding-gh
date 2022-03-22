@@ -5,10 +5,16 @@
       <p>
         {{ subdeck }}
       </p>
-      <form action="" method="POST" netlify>
+      <form
+        name="register-interest"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="register-interest" />
         <input
           class="hero-form-input"
-          type="text"
+          type="email"
           name=""
           id=""
           placeholder="Enter your email"
