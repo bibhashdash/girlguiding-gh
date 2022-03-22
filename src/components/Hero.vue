@@ -15,7 +15,7 @@
         <input
           class="hero-form-input"
           type="email"
-          name=""
+          name="email"
           id=""
           placeholder="Enter your email"
         />
