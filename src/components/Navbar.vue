@@ -55,6 +55,9 @@
           </li>
 
           <li class="nav-item">
+            <router-link class="nav-link" to="/leaders">Leaders</router-link>
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link" to="/policies">Policies</router-link>
           </li>
           <li class="nav-item">

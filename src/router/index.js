@@ -10,6 +10,7 @@ import SignUp from "../views/SignUp.vue";
 import Brownies from "../views/Brownies.vue";
 import Rainbows from "../views/Rainbows.vue";
 import Guides from "../views/Guides.vue";
+import Leaders from "../views/Leaders.vue";
 
 const routes = [
   {
@@ -32,6 +33,11 @@ const routes = [
     path: "/units/guides",
     name: "Guides",
     component: Guides,
+  },
+  {
+    path: "/leaders",
+    name: "Leaders",
+    component: Leaders,
   },
   {
     path: "/policies",
