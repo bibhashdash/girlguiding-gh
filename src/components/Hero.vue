@@ -5,7 +5,7 @@
       <p>
         {{ subdeck }}
       </p>
-      <form action="">
+      <form action="" method="POST" netlify>
         <input
           class="hero-form-input"
           type="text"
