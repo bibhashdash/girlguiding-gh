@@ -17,7 +17,7 @@ export default {
   components: { ContactUs, Hero },
   data() {
     return {
-      headline: "Big Headline here like this",
+      headline: "Bog Headline here like this",
       subdeck:
         "Subdeck in here over 2 decks pointing to how people can register their interest below",
       imagesrc: "../assets/images/hero-placeholder.jpg",
