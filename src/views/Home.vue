@@ -1,8 +1,42 @@
 <template>
   <div class="home">
-    <div class="home-hero">
+    <section class="main-hero">
       <Hero :headline="headline" :subdeck="subdeck" :imagesrc="imagesrc" />
-    </div>
+    </section>
+    <section class="section section-cards">
+      <h2>Our Units</h2>
+      <div class="cards-container">
+        <div class="unit-card">
+          <img
+            src="../assets/images/rainbows-logo.png"
+            class="unit-card-logo"
+            alt=""
+          /><router-link class="btn-main btn-cards" to="/units/rainbows">
+            More about Rainbows</router-link
+          >
+        </div>
+        <div class="unit-card">
+          <img
+            src="../assets/images/brownies-logo.png"
+            class="unit-card-logo"
+            alt=""
+          />
+          <router-link class="btn-main btn-cards" to="/units/rainbows">
+            More about Brownies</router-link
+          >
+        </div>
+        <div class="unit-card">
+          <img
+            src="../assets/images/guides-logo.png"
+            class="unit-card-logo"
+            alt=""
+          />
+          <router-link class="btn-main btn-cards" to="/units/rainbows">
+            More about Guides</router-link
+          >
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -14,11 +48,58 @@ export default {
   components: { ContactUs, Hero },
   data() {
     return {
-      headline: "Experiences that last a lifetime",
+      headline: "Welcome to Goole & Howdenshire District Girlguiding",
       subdeck:
         "Subdeck in here over 2 decks pointing to how people can register their interest below",
-      imagesrc: require("../assets/images/hero-placeholder-2.jpg"),
+      imagesrc: require("../assets/images/volunteer-hero-placeholder-3.png"),
     };
   },
 };
 </script>
+<style>
+.main-hero {
+  display: flex;
+  justify-content: center;
+}
+.section {
+  padding: 20% 0;
+}
+.section-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards-container {
+  display: flex;
+  flex-direction: column;
+}
+.unit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+}
+.unit-card-logo {
+  width: 280px;
+}
+.btn-cards {
+  margin-top: 1rem;
+}
+@media all and (min-width: 768px) {
+  .section {
+    padding: 10% 0;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .unit-card-logo {
+    width: 240px;
+  }
+  .btn-cards {
+    width: 90%;
+  }
+}
+</style>

@@ -38,15 +38,15 @@ export default {
 .hero {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
   width: 100%;
   height: auto;
-  padding: 5% 10px;
 }
 .hero-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
 }
 .hero-content h1 {
   font-size: 54px;
@@ -64,14 +64,16 @@ form {
 }
 .hero-form-input {
   height: 36px;
-
+  font-size: 12px;
   border: 1.5px solid rgb(204, 204, 204);
+  border-radius: 8px 0 0 8px;
 }
 .btn-hero {
   height: 36px;
   background-color: #c40064;
   color: #fff;
   border: none;
+  border-radius: 0 8px 8px 0;
 }
 .hero-image {
   width: 100%;
@@ -84,40 +86,54 @@ form {
     gap: 0.5rem;
     width: 100%;
     height: auto;
-    padding: 5%;
   }
   .hero-content {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: flex-start;
   }
   .hero-content h1 {
-    font-size: 54px;
-    font-weight: 700;
     margin-bottom: 1rem;
   }
   .hero-content P {
     margin-bottom: 1rem;
   }
   form {
-    width: 100%;
+    margin-bottom: 1rem;
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .hero {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+
+    height: auto;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-content h1 {
     margin-bottom: 1rem;
   }
-  .hero-form-input {
-    height: 36px;
+  .hero-content P {
+    margin-bottom: 1rem;
+  }
+  form {
+    margin-bottom: 1rem;
+  }
+}
 
-    border: 1.5px solid rgb(204, 204, 204);
+@media all and (min-width: 1400px) {
+  .hero {
+    width: 90%;
+    height: auto;
   }
-  .btn-hero {
-    height: 36px;
-    background-color: #c40064;
-    color: #fff;
-    border: none;
-  }
-  .hero-image {
-    width: 100%;
+  .hero-content {
+    width: 80%;
   }
 }
 </style>

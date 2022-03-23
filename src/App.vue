@@ -1,7 +1,8 @@
 <template>
   <Navbar />
-
-  <router-view />
+  <div class="main">
+    <router-view />
+  </div>
 </template>
 
 <script>
@@ -20,5 +21,28 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.main {
+  padding: 5%;
+}
+.btn-main {
+  height: 36px;
+  background-color: #c40064;
+  color: #fff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-main:hover {
+  color: #fff;
+}
+
+@media all and (min-width: 992px) {
+  .main {
+    padding: 5% 12%;
+  }
 }
 </style>

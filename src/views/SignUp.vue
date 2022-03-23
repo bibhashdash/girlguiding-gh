@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="Signup-hero">
+    <div class="main-hero">
       <Hero :headline="headline" :subdeck="subdeck" :imagesrc="imagesrc" />
     </div>
   </div>
@@ -14,7 +14,7 @@ export default {
   components: { ContactUs, Hero },
   data() {
     return {
-      headline: "Parents, your time to shine is now!",
+      headline: "Ready to discover your full potential? Join us!",
       subdeck:
         "Subdeck in here over 2 decks pointing to how people can register their interest below",
       imagesrc: require("../assets/images/hero-placeholder-1.jpg"),
