@@ -11,6 +11,7 @@ import Brownies from "../views/Brownies.vue";
 import Rainbows from "../views/Rainbows.vue";
 import Guides from "../views/Guides.vue";
 import Leaders from "../views/Leaders.vue";
+import FormSuccess from "../views/FormSuccess.vue";
 
 const routes = [
   {
@@ -68,6 +69,11 @@ const routes = [
     path: "/signup",
     name: "SignUp",
     component: SignUp,
+  },
+  {
+    path: "/formsuccess",
+    name: "FormSuccess",
+    component: FormSuccess,
   },
 ];
 
