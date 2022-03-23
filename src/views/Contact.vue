@@ -35,7 +35,7 @@ export default {
     const router = useRouter();
     const handleSubmit = () => {
       axios
-        .post("/", {
+        .post("/Contact", {
           name: name.value,
           email: email.value,
           message: message.value,
