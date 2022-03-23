@@ -1,5 +1,5 @@
 <template>
-  <h1>Contact Us</h1>
+  <h1>Contact Me</h1>
   <form
     class="contact-form"
     name="contact"
@@ -34,9 +34,11 @@ export default {
     const message = ref("");
     const router = useRouter();
     const data = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
+      form: {
+        name: name.value,
+        email: email.value,
+        message: message.value,
+      },
     };
     const encode = (data) => {
       return Object.keys(data)
@@ -62,7 +64,7 @@ export default {
           router.push("/FormSuccess");
         });
     };
-    return { name, email, message, handleSubmit };
+    return { name, email, message, handleSubmit, data };
   },
 };
 </script>
