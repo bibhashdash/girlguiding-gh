@@ -1,11 +1,8 @@
 <template>
   <div class="home">
-    <!-- <h1>Home</h1> -->
-    <div class="hero">
+    <div class="home-hero">
       <Hero :headline="headline" :subdeck="subdeck" :imagesrc="imagesrc" />
     </div>
-
-    <!-- <ContactUs /> -->
   </div>
 </template>
 
@@ -17,10 +14,10 @@ export default {
   components: { ContactUs, Hero },
   data() {
     return {
-      headline: "Bog Headline here like this",
+      headline: "Experiences that last a lifetime",
       subdeck:
         "Subdeck in here over 2 decks pointing to how people can register their interest below",
-      imagesrc: "../assets/images/hero-placeholder.jpg",
+      imagesrc: require("../assets/images/hero-placeholder-2.jpg"),
     };
   },
 };

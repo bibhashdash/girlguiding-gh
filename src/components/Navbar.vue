@@ -1,12 +1,12 @@
 <template>
   <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"
+      <router-link class="navbar-brand" to="/"
         ><img
           class="logo"
           src="../assets/images/ggGH-logo.png"
           alt="girlguiding logo"
-      /></a>
+      /></router-link>
       <button
         class="navbar-toggler"
         type="button"
