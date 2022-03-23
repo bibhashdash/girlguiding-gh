@@ -1,8 +1,7 @@
 <template>
   <div class="home">
-    <section class="main-hero">
-      <Hero :headline="headline" :subdeck="subdeck" :imagesrc="imagesrc" />
-    </section>
+    <Hero :headline="headline" :subdeck="subdeck" :imagesrc="imagesrc" />
+
     <section class="section section-cards">
       <h2>Our Units</h2>
       <div class="cards-container">
@@ -21,7 +20,7 @@
             class="unit-card-logo"
             alt=""
           />
-          <router-link class="btn-main btn-cards" to="/units/rainbows">
+          <router-link class="btn-main btn-cards" to="/units/brownies">
             More about Brownies</router-link
           >
         </div>
@@ -31,7 +30,7 @@
             class="unit-card-logo"
             alt=""
           />
-          <router-link class="btn-main btn-cards" to="/units/rainbows">
+          <router-link class="btn-main btn-cards" to="/units/guides">
             More about Guides</router-link
           >
         </div>
@@ -57,10 +56,6 @@ export default {
 };
 </script>
 <style>
-.main-hero {
-  display: flex;
-  justify-content: center;
-}
 .section {
   padding: 20% 0;
 }

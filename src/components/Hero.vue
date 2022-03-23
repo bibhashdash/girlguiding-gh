@@ -36,6 +36,7 @@ export default {
 
 <style>
 .hero {
+  padding: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,6 +107,7 @@ form {
 
 @media all and (min-width: 992px) {
   .hero {
+    padding: 5% 12%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;

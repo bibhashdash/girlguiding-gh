@@ -22,9 +22,7 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-.main {
-  padding: 5%;
-}
+
 .btn-main {
   height: 36px;
   background-color: #c40064;
