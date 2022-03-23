@@ -3,7 +3,7 @@
     <Hero :headline="headline" :subdeck="subdeck" :imagesrc="imagesrc" />
 
     <section class="section section-cards">
-      <h2>Our Units</h2>
+      <h2>Ourr Units</h2>
       <div class="cards-container">
         <div class="unit-card">
           <img

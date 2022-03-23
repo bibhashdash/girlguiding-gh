@@ -7,7 +7,7 @@
       </p>
       <form
         name="register-interest"
-        action="../views/Home.vue"
+        action="/"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
