@@ -33,13 +33,31 @@ export default {
     const email = ref("");
     const message = ref("");
     const router = useRouter();
+    const data = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    const encode = (data) => {
+      return Object.keys(data)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join("&");
+    };
     const handleSubmit = () => {
+      const axiosConfig = {
+        header: { "Content-Type": "application/x-www-form-urlencoded" },
+      };
       axios
-        .post("/Contact", {
-          name: name.value,
-          email: email.value,
-          message: message.value,
-        })
+        .post(
+          "/",
+          encode({
+            "form-name": "contact",
+            ...form,
+          }),
+          axiosConfig
+        )
         .then(() => {
           router.push("/FormSuccess");
         });
