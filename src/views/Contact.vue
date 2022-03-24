@@ -1,5 +1,5 @@
 <template>
-  <h1>Contact Barry</h1>
+  <h1>Contact Louise</h1>
   <form
     class="contact-form"
     name="contact"
@@ -55,7 +55,7 @@ export default {
       };
       axios
         .post(
-          "/contact",
+          "/",
           this.encode({
             "form-name": "contact",
             ...this.form,
