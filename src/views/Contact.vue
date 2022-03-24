@@ -1,5 +1,5 @@
 <template>
-  <h1>Contact Karla</h1>
+  <h1>Contact Madison</h1>
   <form
     class="contact-form"
     name="contact"
@@ -31,7 +31,7 @@
 <script>
 import axios from "axios";
 export default {
-  data() {
+  data: () => {
     return {
       form: {
         name: "",
