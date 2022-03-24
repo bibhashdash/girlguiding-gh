@@ -11,11 +11,17 @@
   >
     <input type="hidden" name="form-name" value="contact" />
     <label for="">Name:</label>
-    <input v-model="name" type="text" />
+    <input v-model="form.name" type="text" />
     <label for="">Email:</label>
-    <input v-model="email" type="email" name="" id="" />
+    <input v-model="form.email" type="email" name="" id="" />
     <label for="">Your message:</label>
-    <textarea v-model="message" name="" id="" cols="30" rows="10"></textarea>
+    <textarea
+      v-model="form.message"
+      name=""
+      id=""
+      cols="30"
+      rows="10"
+    ></textarea>
     <button>Submit</button>
   </form>
   <!-- <p>{{ name }}</p>
@@ -24,47 +30,41 @@
 </template>
 
 <script>
-import axios from "axios";
-import { ref } from "@vue/reactivity";
-import { useRouter } from "vue-router";
 export default {
-  setup() {
-    const name = ref("");
-    const email = ref("");
-    const message = ref("");
-    const router = useRouter();
-    const data = {
+  data() {
+    return {
       form: {
-        name: name.value,
-        email: email.value,
-        message: message.value,
+        name: "",
+        email: "",
+        message: "",
       },
     };
-    const encode = (data) => {
+  },
+  methods: {
+    encode(data) {
       return Object.keys(data)
         .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+          (key) =>
+            `${encodeURIComponent(key)} = ${encodeURIComponent(data[key])}`
         )
         .join("&");
-    };
-    const handleSubmit = () => {
-      const axiosConfig = {
-        header: { "Content-Type": "application/x-www-form-urlencoded" },
-      };
-      axios
-        .post(
-          "/",
-          encode({
-            "form-name": "contact",
-            ...form,
-          }),
-          axiosConfig
-        )
+    },
+    handleSubmit() {
+      fetch("/", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: this.encode({
+          "form-name": "contact",
+          ...this.form,
+        }),
+      })
         .then(() => {
-          router.push("/FormSuccess");
-        });
-    };
-    return { name, email, message, handleSubmit, data };
+          console.log("successfully sent");
+        })
+        .catch((error) => console.log(error));
+    },
   },
 };
 </script>
