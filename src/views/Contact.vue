@@ -55,7 +55,7 @@ export default {
       };
       axios
         .post(
-          "/",
+          "/contact",
           this.encode({
             "form-name": "contact",
             ...this.form,
