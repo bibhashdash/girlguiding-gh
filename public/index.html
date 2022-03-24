@@ -41,11 +41,17 @@
     >
       <input type="hidden" name="form-name" value="contact" />
       <label for="">Name:</label>
-      <input v-model="name" type="text" />
+      <input v-model="name" name="name" type="text" />
       <label for="">Email:</label>
-      <input v-model="email" type="email" name="" id="" />
+      <input v-model="email" type="email" name="email" id="" />
       <label for="">Your message:</label>
-      <textarea v-model="message" name="" id="" cols="30" rows="10"></textarea>
+      <textarea
+        v-model="message"
+        name="message"
+        id=""
+        cols="30"
+        rows="10"
+      ></textarea>
       <button>Submit</button>
     </form>
     <noscript>

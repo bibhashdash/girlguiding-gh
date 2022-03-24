@@ -1,5 +1,5 @@
 <template>
-  <h1>Contact Us</h1>
+  <h1>Contact Barry</h1>
   <form
     class="contact-form"
     name="contact"
@@ -10,13 +10,13 @@
   >
     <input type="hidden" name="form-name" value="contact" />
     <label for="">Name:</label>
-    <input v-model="form.name" type="text" />
+    <input v-model="form.name" name="name" type="text" />
     <label for="">Email:</label>
-    <input v-model="form.email" type="email" name="" id="" />
+    <input v-model="form.email" type="email" name="email" id="" />
     <label for="">Your message:</label>
     <textarea
       v-model="form.message"
-      name=""
+      name="message"
       id=""
       cols="30"
       rows="10"
