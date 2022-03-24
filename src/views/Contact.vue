@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
@@ -49,16 +50,18 @@ export default {
         .join("&");
     },
     handleSubmit() {
-      fetch("/contact", {
-        method: "post",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: this.encode({
-          "form-name": "contact",
-          ...this.form,
-        }),
-      })
+      const axiosConfig = {
+        header: { "Content-Type": "application/x-www-form-urlencoded" },
+      };
+      axios
+        .post(
+          "/",
+          this.encode({
+            "form-name": "contact",
+            ...this.form,
+          }),
+          axiosConfig
+        )
         .then(() => {
           console.log("successfully sent");
         })
