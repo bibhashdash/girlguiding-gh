@@ -1,11 +1,10 @@
 <template>
-  <h1>Contact Me</h1>
+  <h1>Contact Us</h1>
   <form
     class="contact-form"
     name="contact"
     method="POST"
     data-netlify="true"
-    action="/"
     data-netlify-honeypot="bot-field"
     @submit.prevent="handleSubmit"
   >
@@ -50,7 +49,7 @@ export default {
         .join("&");
     },
     handleSubmit() {
-      fetch("/", {
+      fetch("/contact", {
         method: "post",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
