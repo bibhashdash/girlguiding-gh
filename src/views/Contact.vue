@@ -1,9 +1,9 @@
 <template>
-  <h1>Contact Cory</h1>
+  <h1>Contact Vibhash</h1>
   <form
     class="contact-form"
     name="contact"
-    method="POST"
+    method="post"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
     @submit.prevent="handleSubmit"
