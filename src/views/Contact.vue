@@ -1,5 +1,5 @@
 <template>
-  <h1>Contact Ramessss</h1>
+  <h1>Contact Suressss</h1>
   <form
     class="contact-form"
     name="contact"
