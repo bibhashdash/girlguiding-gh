@@ -7,7 +7,7 @@
       </p>
       <form
         name="register-interest"
-        action="/"
+        action="/FormSuccess"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
