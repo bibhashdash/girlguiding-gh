@@ -1,5 +1,5 @@
 <template>
-  <h1>Contact Madison</h1>
+  <h1>Contact Cory</h1>
   <form
     class="contact-form"
     name="contact"
@@ -31,15 +31,13 @@
 <script>
 import axios from "axios";
 export default {
-  data: () => {
-    return {
-      form: {
-        name: "",
-        email: "",
-        message: "",
-      },
-    };
-  },
+  data: () => ({
+    form: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  }),
   methods: {
     encode(data) {
       return Object.keys(data)
