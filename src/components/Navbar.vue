@@ -123,10 +123,16 @@ export default {};
   text-align: center;
   max-width: 200px;
 }
+@media all and (min-width: 768px) {
+  #nav {
+    background: linear-gradient(to bottom, #c40064, #4e88c7);
+    padding: 10px 5%;
+  }
+}
 @media all and (min-width: 992px) {
   #nav {
     background: linear-gradient(to right, #c40064, #4e88c7);
-    padding: 10px 0;
+    padding: 10px 5%;
   }
   .navbar-collapse {
     justify-content: flex-end;
@@ -143,6 +149,12 @@ export default {};
 
   .nav-cta {
     width: 100px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #nav {
+    padding: 10px 10%;
   }
 }
 </style>

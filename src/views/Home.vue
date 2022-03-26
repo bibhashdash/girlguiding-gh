@@ -2,7 +2,7 @@
   <Hero :headline="headline" :subdeck="subdeck" :imagesrc="imagesrc" />
 
   <section class="section section-cards">
-    <h2>Ourrs Units</h2>
+    <h2>Our Units</h2>
     <div class="cards-container">
       <div class="unit-card">
         <img
@@ -115,6 +115,11 @@ export default {
   }
   .btn-cards {
     width: 90%;
+  }
+}
+@media all and (min-width: 768px) {
+  .cards-container {
+    padding: 0 10%;
   }
 }
 </style>

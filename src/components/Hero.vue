@@ -148,10 +148,6 @@ form {
   }
 }
 @media all and (min-width: 1400px) {
-  .hero {
-    /* width: 90%; */
-    height: auto;
-  }
   .hero-content h1 {
     font-size: 4.3rem;
   }
