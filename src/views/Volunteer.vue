@@ -1,8 +1,6 @@
 <template>
-  <div class="home">
-    <div class="main-hero">
-      <Hero :headline="headline" :subdeck="subdeck" :imagesrc="imagesrc" />
-    </div>
+  <div class="main-hero">
+    <Hero :headline="headline" :subdeck="subdeck" :imagesrc="imagesrc" />
   </div>
 </template>
 
@@ -17,7 +15,7 @@ export default {
       headline: "Volunteer with us and help change lives!",
       subdeck:
         "Subdeck in here over 2 decks pointing to how people can register their interest below",
-      imagesrc: require("../assets/images/volunteer-hero-placeholder-3.png"),
+      imagesrc: require("../assets/images/camp.jpg"),
     };
   },
 };

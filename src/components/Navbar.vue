@@ -92,7 +92,7 @@ export default {};
 <style>
 #nav {
   background: linear-gradient(to bottom, #c40064, #4e88c7);
-  padding: 10px 5%;
+
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -102,10 +102,6 @@ export default {};
   font-weight: bold;
   color: #fff;
 }
-
-/* #nav a.router-link-exact-active {
-  color: #42b983;
-} */
 
 .logo {
   width: 100px;
@@ -130,7 +126,7 @@ export default {};
 @media all and (min-width: 992px) {
   #nav {
     background: linear-gradient(to right, #c40064, #4e88c7);
-    padding: 10px 10%;
+    padding: 10px 0;
   }
   .navbar-collapse {
     justify-content: flex-end;

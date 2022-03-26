@@ -21,6 +21,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid black;
 }
 
 .btn-main {
@@ -36,11 +37,6 @@ export default {
 }
 .btn-main:hover {
   color: #fff;
-}
-
-@media all and (min-width: 992px) {
-  .main {
-    padding: 5% 12%;
-  }
+  background-color: #211c4f !important;
 }
 </style>

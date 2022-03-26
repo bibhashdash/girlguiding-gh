@@ -1,11 +1,12 @@
 <template>
   <div class="hero">
     <div class="hero-content">
-      <h1>{{ headline }}</h1>
-      <p>
+      <h1 class="hero-headline">{{ headline }}</h1>
+      <p class="hero-subdeck">
         {{ subdeck }}
       </p>
       <form
+        class="register-interest-form"
         name="register-interest"
         action="/FormSuccess"
         method="POST"
@@ -42,6 +43,7 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 100%;
+
   height: auto;
 }
 .hero-content {
@@ -51,7 +53,7 @@ export default {
   align-items: center;
 }
 .hero-content h1 {
-  font-size: 54px;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }
@@ -80,6 +82,13 @@ form {
 .hero-image {
   width: 100%;
 }
+@media all and (min-width: 576px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+}
 
 @media all and (min-width: 768px) {
   .hero {
@@ -95,6 +104,7 @@ form {
     align-items: flex-start;
   }
   .hero-content h1 {
+    font-size: 2.1rem;
     margin-bottom: 1rem;
   }
   .hero-content P {
@@ -108,11 +118,10 @@ form {
 
 @media all and (min-width: 992px) {
   .hero {
-    padding: 5% 12%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
-
+    padding: 5% 10%;
     height: auto;
   }
   .hero-content {
@@ -121,6 +130,7 @@ form {
   }
   .hero-content h1 {
     margin-bottom: 1rem;
+    font-size: 3.1rem;
   }
   .hero-content P {
     margin-bottom: 1rem;
@@ -129,14 +139,21 @@ form {
     margin-bottom: 1rem;
   }
 }
-
+@media all and (min-width: 1200px) {
+  .hero {
+    padding: 5% 15%;
+  }
+  .hero-content h1 {
+    font-size: 3.6rem;
+  }
+}
 @media all and (min-width: 1400px) {
   .hero {
-    width: 90%;
+    /* width: 90%; */
     height: auto;
   }
-  .hero-content {
-    width: 80%;
+  .hero-content h1 {
+    font-size: 4.3rem;
   }
 }
 </style>
