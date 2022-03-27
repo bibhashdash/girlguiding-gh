@@ -71,14 +71,16 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
+  width: 50%;
 }
 .branding p {
-  padding: 0 10%;
+  /* padding: 0 10%; */
   color: #fff;
   font-size: 0.8rem;
 }
 .navigation {
   margin-bottom: 2rem;
+  width: 50%;
 }
 .navigation-grid {
   display: grid;
@@ -88,7 +90,7 @@ footer {
 .navigation h3,
 .contact-info h3 {
   font-size: 1rem;
-  text-align: center;
+  text-align: start;
   color: #fff;
 }
 .footer-nav-link {
@@ -99,7 +101,8 @@ footer {
 .contact-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  width: 50%;
 }
 .contact-info-slot {
   display: grid;
@@ -116,14 +119,21 @@ footer {
 @media all and (min-width: 768px) {
   footer {
     padding: 5%;
-    background: linear-gradient(to bottom, #c40064, #4e88c7);
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
     align-items: flex-start;
-    justify-content: space-evenly;
   }
-  .branding {
-    width: 30%;
+  .branding,
+  .navigation,
+  .contact-info {
+    width: 60%;
+  }
+}
+@media all and (min-width: 1200px) {
+  footer {
+    padding: 5% 15%;
   }
 }
 </style>

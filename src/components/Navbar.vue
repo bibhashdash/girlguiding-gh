@@ -96,6 +96,7 @@ export default {};
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  position: fixed;
 }
 
 #nav a {
@@ -122,6 +123,9 @@ export default {};
   width: auto;
   text-align: center;
   max-width: 200px;
+}
+.nav-cta:hover {
+  background-color: #211c4f !important;
 }
 @media all and (min-width: 768px) {
   #nav {

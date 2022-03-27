@@ -39,6 +39,7 @@ export default {
 <style>
 .hero {
   padding: 5%;
+  padding-top: 7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,6 +79,9 @@ form {
   color: #fff;
   border: none;
   border-radius: 0 8px 8px 0;
+}
+.btn-hero:hover {
+  background-color: #211c4f !important;
 }
 .hero-image {
   width: 100%;
@@ -122,6 +126,7 @@ form {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
     padding: 5% 10%;
+    padding-top: 7rem;
     height: auto;
   }
   .hero-content {
@@ -142,6 +147,7 @@ form {
 @media all and (min-width: 1200px) {
   .hero {
     padding: 5% 15%;
+    padding-top: 7rem;
   }
   .hero-content h1 {
     font-size: 3.6rem;
