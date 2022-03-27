@@ -75,7 +75,7 @@ footer {
 .branding p {
   padding: 0 10%;
   color: #fff;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 .navigation {
   margin-bottom: 2rem;
@@ -94,7 +94,7 @@ footer {
 .footer-nav-link {
   text-decoration: none;
   color: #fff !important;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 .contact-info {
   display: flex;
@@ -108,7 +108,7 @@ footer {
 .contact-info-slot p {
   color: #fff;
   margin-left: 1rem;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 .bi {
   color: #fff;

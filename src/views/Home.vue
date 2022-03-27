@@ -62,7 +62,7 @@
         An elevator pitch to show the benefits of volunteering so that we can
         link to the volunteering page in the button below.
       </p>
-      <router-link class="btn-main" to="/policies">
+      <router-link class="btn-main" to="/volunteer">
         Volunteer with us</router-link
       >
     </div>

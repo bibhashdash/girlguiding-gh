@@ -1,7 +1,7 @@
 <template>
   <div class="contact-cta">
     <p>For any questions or to find out more about our activities</p>
-    <button class="btn-main">Contact Us</button>
+    <router-link class="btn-main" to="/contact">Contact Us</router-link>
   </div>
 </template>
 
