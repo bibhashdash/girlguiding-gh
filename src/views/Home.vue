@@ -232,6 +232,7 @@ export default {
 }
 .section-gallery h2 {
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 .gallery-preview {
   display: flex;

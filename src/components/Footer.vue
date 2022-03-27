@@ -42,11 +42,11 @@
     <div class="contact-info">
       <h3>Contact</h3>
       <div class="contact-info-slot">
-        <i class="bi bi-telephone"></i>
+        <i class="bi footer-bi bi-telephone"></i>
         <p>+44 01234 456789</p>
       </div>
       <div class="contact-info-slot">
-        <i class="bi bi-envelope"></i>
+        <i class="bi footer-bi bi-envelope"></i>
         <p>email@domain.com</p>
       </div>
     </div>
@@ -113,7 +113,7 @@ footer {
   margin-left: 1rem;
   font-size: 0.8rem;
 }
-.bi {
+.footer-bi {
   color: #fff;
 }
 @media all and (min-width: 768px) {

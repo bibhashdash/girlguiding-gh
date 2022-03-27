@@ -41,4 +41,8 @@ export default {
   color: #fff;
   background-color: #211c4f !important;
 }
+.btn-main a {
+  text-decoration: none;
+  color: #fff;
+}
 </style>
