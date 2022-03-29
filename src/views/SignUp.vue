@@ -15,10 +15,9 @@
       ></iframe>
       <p>
         When did you last go on an adventure? When did you last sit beneath the
-        stars, toasting marshmallows on the fire? When did you last challenge
-        yourself? When did you last go on an adventure? When did you last sit
-        beneath the stars, toasting marshmallows on the fire? When did you last
-        challenge yourself?
+        stars, toasting marshmallows on the fire? <br />
+        <br />
+        When did you last challenge yourself?
       </p>
     </div>
   </section>
@@ -242,8 +241,12 @@
       </div>
     </div>
   </section>
-  <section class="section contactus-cta">
-    <ContactUs />
+  <section class="section section-briefs">
+    <img src="../assets/images/question.png" alt="" />
+    <div class="briefs-content">
+      <p>Got any questions or just want to find out more?</p>
+      <router-link class="btn-main" to="/contact"> Contact Us</router-link>
+    </div>
   </section>
 </template>
 
@@ -270,11 +273,13 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(to bottom, rgba(196, 0, 101), rgb(78, 136, 199));
+  color: #fff;
 }
 .section-video h2,
 .section-cards h2 {
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 .video {
   width: 100%;
@@ -318,9 +323,15 @@ export default {
 }
 .section-faq h2 {
   margin-bottom: 1rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
 }
 .accordion {
   width: 100%;
+}
+.accordion h2 {
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 
 .accordion-button {
@@ -375,6 +386,7 @@ export default {
 @media all and (min-width: 992px) {
   .section-video {
     padding: 5% 10%;
+    background: linear-gradient(to right, rgba(196, 0, 101), rgb(78, 136, 199));
   }
   .section-video-content {
     width: 100%;
@@ -382,6 +394,10 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     align-items: center;
+    justify-items: center;
+  }
+  .section-video-content p {
+    width: 100%;
   }
   .section-howto {
     padding: 5% 10%;

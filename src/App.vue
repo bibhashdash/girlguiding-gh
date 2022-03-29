@@ -45,4 +45,7 @@ export default {
   text-decoration: none;
   color: #fff;
 }
+h2 {
+  text-decoration: underline;
+}
 </style>

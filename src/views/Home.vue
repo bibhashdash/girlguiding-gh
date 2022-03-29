@@ -126,8 +126,12 @@
     </div>
     <router-link class="btn-main" to="/gallery"> View full gallery</router-link>
   </section>
-  <section class="section contactus-cta">
-    <ContactUs />
+  <section class="section section-briefs">
+    <img src="../assets/images/question.png" alt="" />
+    <div class="briefs-content">
+      <p>Got any questions or just want to find out more?</p>
+      <router-link class="btn-main" to="/contact"> Contact Us</router-link>
+    </div>
   </section>
 </template>
 
@@ -209,7 +213,7 @@ export default {
   background: linear-gradient(
       to right,
       rgba(196, 0, 101, 0.733),
-      rgb(78, 136, 199, 0.733)
+      hsla(211, 52%, 54%, 0.733)
     ),
     url("../assets/images/handstogether.jpg");
   background-position: center;
@@ -260,7 +264,7 @@ export default {
     width: 90%;
   }
   .section-briefs {
-    padding: 10% 5%;
+    padding: 5%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -281,7 +285,7 @@ export default {
     padding: 20% 5%;
   }
   .section-gallery {
-    padding: 10% 5%;
+    padding: 5%;
   }
   .gallery-preview {
     display: grid;
@@ -291,7 +295,7 @@ export default {
 }
 @media all and (min-width: 992px) {
   .section-briefs {
-    padding: 10%;
+    padding: 5% 10%;
   }
   .section-testimonials {
     padding: 10% 15%;
@@ -305,7 +309,7 @@ export default {
     padding: 0 10%;
   }
   .section-gallery {
-    padding: 10% 15%;
+    padding: 5% 15%;
   }
 }
 </style>

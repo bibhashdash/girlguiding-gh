@@ -50,6 +50,13 @@
         <p>email@domain.com</p>
       </div>
     </div>
+    <div class="byline">
+      <p>Copyright 2022 Girlguiding Goole and Howdenshire</p>
+      <p>
+        Website Design by
+        <a href="https://www.nineblockmedia.com/">Nine Block Media</a>
+      </p>
+    </div>
   </footer>
 </template>
 
@@ -60,18 +67,19 @@ export default {};
 <style>
 footer {
   width: 100%;
-  padding: 10% 5%;
+  padding: 5%;
   background: linear-gradient(to bottom, #c40064, #4e88c7);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 30% 30% 20% 10%;
+  justify-items: center;
+  gap: 1rem;
 }
 .branding {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
-  width: 50%;
+  /* margin-bottom: 2rem; */
+  width: 60%;
 }
 .branding p {
   /* padding: 0 10%; */
@@ -116,24 +124,41 @@ footer {
 .footer-bi {
   color: #fff;
 }
+.byline p {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.byline a {
+  text-decoration: underline;
+  color: #fff;
+}
 @media all and (min-width: 768px) {
   footer {
     padding: 5%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
     gap: 1rem;
     justify-items: center;
     align-items: flex-start;
   }
   .branding,
   .navigation,
+  .byline {
+    width: 70%;
+  }
   .contact-info {
-    width: 60%;
+    width: auto;
   }
 }
 @media all and (min-width: 1200px) {
   footer {
-    padding: 5% 15%;
+    padding: 2% 10%;
+  }
+}
+@media all and (min-width: 1400px) {
+  footer {
+    padding: 2% 15%;
   }
 }
 </style>
