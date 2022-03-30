@@ -15,7 +15,7 @@
             eiusmod tempor incididunt ut labore
           </p>
           <p><strong>File size: 2mb</strong></p>
-          <a href="" download="../assets/policies/GDPR-mock-document.pdf"
+          <a href="../assets/policies/GDPR-mock-document.pdf" download
             >Download</a
           >
         </div>
@@ -27,7 +27,7 @@
             eiusmod tempor incididunt ut labore
           </p>
           <p><strong>File size: 2mb</strong></p>
-          <a href="" download="../assets/policies/GDPR-mock-document.pdf"
+          <a href="../assets/policies/GDPR-mock-document.pdf" download
             >Download</a
           >
         </div>
@@ -39,7 +39,7 @@
             eiusmod tempor incididunt ut labore
           </p>
           <p><strong>File size: 2mb</strong></p>
-          <a href="" download="../assets/policies/GDPR-mock-document.pdf"
+          <a href="../assets/policies/GDPR-mock-document.pdf" download
             >Download</a
           >
         </div>
