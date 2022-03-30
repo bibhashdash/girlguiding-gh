@@ -34,12 +34,12 @@ export default {
 
 @media all and (min-width: 768px) {
   .fullWidthCTA-container {
-    padding: 5% 10%;
+    padding: 0 10%;
   }
 }
 @media all and (min-width: 1200px) {
   .fullWidthCTA-container {
-    padding: 5% 20%;
+    padding: 0 20%;
   }
 }
 </style>

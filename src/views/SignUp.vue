@@ -244,7 +244,7 @@
   <section class="section section-briefs">
     <img src="../assets/images/question.png" alt="" />
     <div class="briefs-content">
-      <p>Got any questions or just want to find out more?</p>
+      <p>Got any more questions or just want to find out more?</p>
       <router-link class="btn-main" to="/contact"> Contact Us</router-link>
     </div>
   </section>
@@ -293,6 +293,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 2px 2px 2px 1px rgb(231, 231, 231);
+  width: 100%;
 }
 .signup-card {
   margin-bottom: 1rem;
@@ -320,6 +322,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 2px 2px 2px 1px rgb(231, 231, 231);
+  width: 100%;
 }
 .section-faq h2 {
   margin-bottom: 1rem;

@@ -44,6 +44,7 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  box-shadow: 2px 2px 2px 1px rgb(231, 231, 231);
 
   height: auto;
 }

@@ -35,8 +35,8 @@
         <router-link class="footer-nav-link" to="/units/guides"
           >Guides</router-link
         >
-        <router-link class="footer-nav-link" to="/">Contact</router-link>
-        <router-link class="footer-nav-link" to="/">Sign Up</router-link>
+        <router-link class="footer-nav-link" to="/contact">Contact</router-link>
+        <router-link class="footer-nav-link" to="/signup">Sign Up</router-link>
       </div>
     </div>
     <div class="contact-info">
@@ -94,6 +94,9 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
+}
+.navigation-grid a:hover {
+  color: #211c4f !important;
 }
 .navigation h3,
 .contact-info h3 {

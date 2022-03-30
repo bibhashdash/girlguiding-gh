@@ -156,13 +156,12 @@ export default {
 };
 </script>
 <style>
-.section {
-  padding: 20% 0;
-}
 .section-cards {
+  padding: 20% 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .cards-container {
   display: flex;
@@ -190,6 +189,7 @@ export default {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
 }
 .section-briefs {
   padding: 20% 5%;
@@ -219,6 +219,7 @@ export default {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
 }
 .section-testimonials h1,
 .section-testimonials p {
@@ -233,6 +234,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 2px 2px 2px 1px rgb(231, 231, 231);
+  width: 100%;
 }
 .section-gallery h2 {
   margin-bottom: 1rem;
@@ -248,7 +251,7 @@ export default {
 }
 @media all and (min-width: 768px) {
   .section {
-    padding: 5% 0;
+    padding: 5%;
   }
   .cards-container {
     display: flex;
@@ -256,6 +259,9 @@ export default {
     justify-content: space-evenly;
     width: 100%;
     padding: 0 10%;
+  }
+  .unit-card {
+    margin: 0;
   }
   .unit-card-logo {
     width: 240px;
@@ -268,6 +274,7 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
   .section-briefs img {
     width: 50%;
@@ -297,13 +304,19 @@ export default {
   .section-briefs {
     padding: 5% 10%;
   }
+  .section-briefs img {
+    width: 30%;
+  }
   .section-testimonials {
     padding: 10% 15%;
   }
 }
 @media all and (min-width: 1200px) {
+  .section-cards {
+    padding: 5%;
+  }
   .section-briefs {
-    padding: 3% 15%;
+    padding: 1% 15%;
   }
   .briefs-content {
     padding: 0 10%;
