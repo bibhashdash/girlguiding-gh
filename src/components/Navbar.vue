@@ -113,7 +113,15 @@ export default {};
   font-weight: bold;
   color: #fff;
 }
-
+nav li .router-link-exact-active {
+  color: #211c4f !important;
+}
+.nav-item a:hover {
+  color: #211c4f !important;
+}
+.nav-cta a:hover {
+  color: #fff !important;
+}
 .logo {
   width: 100px;
 }
