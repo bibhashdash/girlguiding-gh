@@ -37,17 +37,26 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li>
-                <router-link to="/units/brownies" class="dropdown-item" href="#"
+                <router-link
+                  to="/units/brownies"
+                  class="dropdown-item nav-link"
+                  href="#"
                   >Brownies</router-link
                 >
               </li>
               <li>
-                <router-link to="/units/rainbows" class="dropdown-item" href="#"
+                <router-link
+                  to="/units/rainbows"
+                  class="dropdown-item nav-link"
+                  href="#"
                   >Rainbows</router-link
                 >
               </li>
               <li>
-                <router-link to="/units/guides" class="dropdown-item" href="#"
+                <router-link
+                  to="/units/guides"
+                  class="dropdown-item nav-link"
+                  href="#"
                   >Guides</router-link
                 >
               </li>
@@ -126,7 +135,7 @@ export default {};
   max-width: 200px;
 }
 .nav-cta:hover {
-  background-color: #211c4f !important;
+  background-color: #211c4f;
 }
 @media all and (min-width: 768px) {
   #nav {

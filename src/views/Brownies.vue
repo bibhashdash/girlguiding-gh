@@ -14,7 +14,7 @@ export default {
   components: { ContactUs, Hero },
   data() {
     return {
-      headline: "Big headline in here about Brownies",
+      headline: "Big headline in here about  Brownies",
       subdeck:
         "Subdeck in here over 2 decks pointing to how people can register their interest below",
       imagesrc: require("../assets/images/brownies-logo.png"),
