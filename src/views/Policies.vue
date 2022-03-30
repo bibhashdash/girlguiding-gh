@@ -15,7 +15,7 @@
             eiusmod tempor incididunt ut labore
           </p>
           <p><strong>File size: 2mb</strong></p>
-          <a :href="`${publicPath}GDPR-mock-document.pdf`" download>download</a>
+          <a :href="`${publicPath}GDPR-mock-document.pdf`" download>Download</a>
         </div>
         <div class="policies-card">
           <img src="../assets/images/safeguarding.png" alt="" />
@@ -26,7 +26,7 @@
           </p>
           <p><strong>File size: 2mb</strong></p>
           <a :href="`${publicPath}safeguarding-mock-document.pdf`" download
-            >download</a
+            >Download</a
           >
         </div>
         <div class="policies-card">
@@ -38,11 +38,18 @@
           </p>
           <p><strong>File size: 2mb</strong></p>
           <a :href="`${publicPath}conduct-mock-document.pdf`" download
-            >download</a
+            >Download</a
           >
         </div>
       </div>
     </div>
+    <section class="section section-briefs">
+      <img src="../assets/images/question.png" alt="" />
+      <div class="briefs-content">
+        <p>Got any questions or just want to find out more?</p>
+        <router-link class="btn-main" to="/contact"> Contact Us</router-link>
+      </div>
+    </section>
   </div>
 </template>
 
