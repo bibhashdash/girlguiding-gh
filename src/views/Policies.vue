@@ -8,20 +8,6 @@
     <div class="section section-cards">
       <div class="policies-cards-container">
         <div class="policies-card">
-          <img src="../assets/images/safeguarding.png" alt="" />
-          <h2>Safeguarding</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore
-          </p>
-          <p><strong>File size: 2mb</strong></p>
-          <a
-            href="require('../assets/policies/GDPR-mock-document.docx')"
-            download="require('../assets/policies/GDPR-mock-document.docx')"
-            >Download</a
-          >
-        </div>
-        <!-- <div class="policies-card">
           <img src="../assets/images/gdpr.png" alt="" />
           <h2>GDPR</h2>
           <p>
@@ -29,11 +15,21 @@
             eiusmod tempor incididunt ut labore
           </p>
           <p><strong>File size: 2mb</strong></p>
-          <a href="../assets/policies/GDPR-mock-document.pdf" download
-            >Download</a
+          <a :href="`${publicPath}GDPR-mock-document.pdf`" download>download</a>
+        </div>
+        <div class="policies-card">
+          <img src="../assets/images/safeguarding.png" alt="" />
+          <h2>Safeguarding</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </p>
+          <p><strong>File size: 2mb</strong></p>
+          <a :href="`${publicPath}safeguarding-mock-document.pdf`" download
+            >download</a
           >
-        </div> -->
-        <!-- <div class="policies-card">
+        </div>
+        <div class="policies-card">
           <img src="../assets/images/codeofconduct.png" alt="" />
           <h2>Code of conduct</h2>
           <p>
@@ -41,10 +37,10 @@
             eiusmod tempor incididunt ut labore
           </p>
           <p><strong>File size: 2mb</strong></p>
-          <a href="../assets/policies/GDPR-mock-document.pdf" download
-            >Download</a
+          <a :href="`${publicPath}conduct-mock-document.pdf`" download
+            >download</a
           >
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -52,11 +48,11 @@
 
 <script>
 export default {
-  // data() {
-  //   return {
-  //     pdfsrc: require("../assets/policies/GDPR-mock-document.docx"),
-  //   };
-  // },
+  data() {
+    return {
+      publicPath: process.env.BASE_URL,
+    };
+  },
 };
 </script>
 
