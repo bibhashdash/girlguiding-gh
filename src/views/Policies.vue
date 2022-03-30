@@ -15,11 +15,13 @@
             eiusmod tempor incididunt ut labore
           </p>
           <p><strong>File size: 2mb</strong></p>
-          <a href="../assets/policies/GDPR-mock-document.pdf" download
+          <a
+            href="require('../assets/policies/GDPR-mock-document.docx')"
+            download="require('../assets/policies/GDPR-mock-document.docx')"
             >Download</a
           >
         </div>
-        <div class="policies-card">
+        <!-- <div class="policies-card">
           <img src="../assets/images/gdpr.png" alt="" />
           <h2>GDPR</h2>
           <p>
@@ -30,8 +32,8 @@
           <a href="../assets/policies/GDPR-mock-document.pdf" download
             >Download</a
           >
-        </div>
-        <div class="policies-card">
+        </div> -->
+        <!-- <div class="policies-card">
           <img src="../assets/images/codeofconduct.png" alt="" />
           <h2>Code of conduct</h2>
           <p>
@@ -42,14 +44,20 @@
           <a href="../assets/policies/GDPR-mock-document.pdf" download
             >Download</a
           >
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  // data() {
+  //   return {
+  //     pdfsrc: require("../assets/policies/GDPR-mock-document.docx"),
+  //   };
+  // },
+};
 </script>
 
 <style>
