@@ -93,6 +93,7 @@ export default {
   align-items: flex-start;
   margin-bottom: 2rem;
   box-shadow: 2px 2px 2px 1px rgb(231, 231, 231);
+  border-radius: 10px;
 }
 .policies-card h2 {
   margin-bottom: 1rem !important;

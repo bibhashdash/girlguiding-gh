@@ -73,6 +73,7 @@ export default {
 .unit-subdivisions {
   display: flex;
   flex-direction: column;
+  align-items: center;
   /* flex-wrap: wrap; */
   width: 100%;
   padding: 10% 5%;

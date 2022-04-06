@@ -25,6 +25,19 @@
         :schedule="schedule2"
       />
     </div>
+    <section class="section section-fullwidth-cta">
+      <FullWidthCTA
+        :fullWidthCTAtext="fullWidthCTAtext"
+        :fullWidthCTAButtonText="fullWidthCTAButtonText"
+      />
+    </section>
+    <section class="section section-briefs">
+      <img src="../assets/images/question.png" alt="" />
+      <div class="briefs-content">
+        <p>Got any questions or just want to find out more?</p>
+        <router-link class="btn-main" to="/contact"> Contact Us</router-link>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -32,9 +45,10 @@
 import ContactUs from "../components/ContactUsCTA.vue";
 import Hero from "../components/Hero.vue";
 import UnitSubdivisionCard from "../components/UnitSubdivisionCard.vue";
+import FullWidthCTA from "../components/FullWidthCTA.vue";
 export default {
   name: "Home",
-  components: { ContactUs, Hero, UnitSubdivisionCard },
+  components: { ContactUs, Hero, UnitSubdivisionCard, FullWidthCTA },
   data() {
     return {
       headline: "Big headline in here about  Brownies",
@@ -47,6 +61,9 @@ export default {
       location2: "6 Townsville Road Townsville DN14 XYZ",
       ageRange2: "5-7",
       schedule2: "Tue, Wed, Thur: 7pm-8pm",
+      fullWidthCTAtext:
+        "We give girls and young women the chance to discover their full potential and encourage them to be a force for good.",
+      fullWidthCTAButtonText: "Join Us",
     };
   },
 };
