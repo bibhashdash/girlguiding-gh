@@ -3,6 +3,7 @@
     <div class="main-hero">
       <Hero :headline="headline" :subdeck="subdeck" :imagesrc="imagesrc" />
     </div>
+    <UnitBrief :unitBrief="unitBrief" />
     <div class="unit-subdivisions">
       <UnitSubdivisionCard
         :location="location1"
@@ -46,9 +47,10 @@ import ContactUs from "../components/ContactUsCTA.vue";
 import Hero from "../components/Hero.vue";
 import UnitSubdivisionCard from "../components/UnitSubdivisionCard.vue";
 import FullWidthCTA from "../components/FullWidthCTA.vue";
+import UnitBrief from "../components/UnitBrief.vue";
 export default {
   name: "Home",
-  components: { ContactUs, Hero, UnitSubdivisionCard, FullWidthCTA },
+  components: { ContactUs, Hero, UnitSubdivisionCard, FullWidthCTA, UnitBrief },
   data() {
     return {
       headline: "Big headline in here about  Brownies",
@@ -64,6 +66,8 @@ export default {
       fullWidthCTAtext:
         "We give girls and young women the chance to discover their full potential and encourage them to be a force for good.",
       fullWidthCTAButtonText: "Join Us",
+      unitBrief:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
     };
   },
 };

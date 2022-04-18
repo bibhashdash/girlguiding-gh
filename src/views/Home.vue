@@ -205,6 +205,7 @@ export default {
   flex-direction: column;
   align-items: center;
 }
+
 .section-testimonials {
   padding: 20% 5%;
   display: flex;
@@ -275,16 +276,19 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 2px 1px rgb(231, 231, 231);
   }
   .section-briefs img {
     width: 50%;
   }
+
   .briefs-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 5%;
   }
+
   .reverse {
     flex-direction: row-reverse;
   }
