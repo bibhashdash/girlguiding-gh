@@ -144,7 +144,7 @@ export default {
   gap: 2.5rem;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 576px) {
   .leaders-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
