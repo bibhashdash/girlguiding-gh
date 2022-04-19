@@ -12,26 +12,41 @@
 
     <div class="leaders-container">
       <LeaderCard
+        @click="showBio(e, 1)"
+        id="leader1"
+        class="leader"
         :leaderName="leaderName1"
         :leaderUnits="leaderUnits1"
         :imagesrc="leaderPicSrc1"
       />
       <LeaderCard
+        @click="showBio(e, 2)"
+        id="leader2"
+        class="leader"
         :leaderName="leaderName2"
         :leaderUnits="leaderUnits2"
         :imagesrc="leaderPicSrc2"
       />
       <LeaderCard
+        @click="showBio(e, 3)"
+        id="leader3"
+        class="leader"
         :leaderName="leaderName3"
         :leaderUnits="leaderUnits3"
         :imagesrc="leaderPicSrc3"
       />
       <LeaderCard
+        @click="showBio(e, 4)"
+        id="leader4"
+        class="leader"
         :leaderName="leaderName3"
         :leaderUnits="leaderUnits3"
         :imagesrc="leaderPicSrc3"
       />
       <LeaderCard
+        @click="showBio(e, 5)"
+        id="leader5"
+        class="leader"
         :leaderName="leaderName3"
         :leaderUnits="leaderUnits3"
         :imagesrc="leaderPicSrc3"
@@ -88,6 +103,18 @@ export default {
       leaderPicSrc3: require("../assets/images/leaderpic3.jpg"),
     };
   },
+  methods: {
+    showBio(event, id) {
+      const leaders = document.querySelectorAll(".leaders");
+      // console.log(leaders);
+      // console.log(id);
+      const leader = document.querySelector(`#leader${id}`);
+      leader.firstElementChild.nextElementSibling.classList.toggle("hidden");
+      leader.firstElementChild.nextElementSibling.nextElementSibling.classList.toggle(
+        "hidden"
+      );
+    },
+  },
 };
 </script>
 
@@ -113,11 +140,15 @@ export default {
   width: 100%;
   padding: 10% 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
   gap: 2.5rem;
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) {
+  .leaders-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .leaders-brief,
   .leaders {
     padding: 5% 15%;

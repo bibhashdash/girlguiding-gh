@@ -1,9 +1,17 @@
 <template>
   <div class="leader-card">
     <img class="leaderPic" :src="imagesrc" alt="" />
-    <div class="leader-card-content">
+    <div class="leader-card-title">
       <h3>{{ leaderName }}</h3>
-      <p>{{ leaderUnits }}</p>
+      <!-- <p>{{ leaderUnits }}</p> -->
+    </div>
+    <div class="leader-card-bio hidden">
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis
+      </p>
+      <span>❌</span>
     </div>
   </div>
 </template>
@@ -27,21 +35,27 @@ export default {
   padding: 1%;
   position: relative;
 }
+.hidden {
+  display: none;
+}
 .leader-card img {
   width: 100%;
 
   border-radius: 10px;
   /* align-self: center; */
 }
-.leader-card-content {
+.leader-card-title,
+.leader-card-bio {
   width: 90%;
   position: absolute;
+  z-index: 3;
   bottom: 1%;
   left: 1%;
   border-radius: 5px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.681);
-  padding: 0 2%;
+  padding: 2%;
+  cursor: pointer;
 }
 
 .leader-card p {
