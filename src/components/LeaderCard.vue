@@ -2,7 +2,7 @@
   <div class="leader-card">
     <img class="leaderPic" :src="imagesrc" alt="" />
     <div class="leader-card-title">
-      <h3>{{ leaderName }}</h3>
+      <h3>{{ leaderName }}<i class="bi bi-plus-lg"></i></h3>
       <!-- <p>{{ leaderUnits }}</p> -->
     </div>
     <div class="leader-card-bio hidden">
@@ -51,13 +51,21 @@ export default {
   z-index: 3;
   bottom: 1%;
   left: 1%;
-  border-radius: 5px;
+  border-radius: 0 0 0 10px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.681);
-  padding: 2%;
+  padding: 5px 4%;
+}
+
+.leader-card-title i,
+.leader-card-bio span {
   cursor: pointer;
 }
 
+.leader-card-bio span,
+.leader-card-title i {
+  float: right;
+}
 .leader-card p {
   font-size: 0.8rem;
 }

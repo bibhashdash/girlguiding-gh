@@ -99,7 +99,16 @@
       </div>
     </div>
   </section>
-
+  <section class="section section-briefs">
+    <img src="../assets/images/leader.png" alt="" />
+    <div class="briefs-content">
+      <p>
+        An elevator pitch to talk about how important the girlguides leaders are
+        so that we can link to the leaders section in the button below.
+      </p>
+      <router-link class="btn-main" to="/leaders">Leaders</router-link>
+    </div>
+  </section>
   <section class="section section-gallery">
     <h2>Gallery</h2>
     <div class="gallery-preview">
@@ -196,9 +205,13 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 2px 2px 2px 1px rgb(231, 231, 231);
 }
 .section-briefs img {
   width: 100%;
+}
+.section-briefs p {
+  font-weight: bold;
 }
 .briefs-content {
   display: flex;
@@ -276,7 +289,6 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    box-shadow: 2px 2px 2px 1px rgb(231, 231, 231);
   }
   .section-briefs img {
     width: 50%;
