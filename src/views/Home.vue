@@ -97,6 +97,24 @@
           <p>Fiona, age 10</p>
         </div>
       </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel-testimonials"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel-testimonials"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </section>
   <section class="section section-briefs">
@@ -242,6 +260,10 @@ export default {
   color: #fff;
   text-shadow: 2px 2px #000000;
   text-align: center;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  align-self: flex-end;
 }
 .section-gallery {
   padding: 20% 5%;
