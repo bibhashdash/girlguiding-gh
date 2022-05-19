@@ -109,7 +109,7 @@
     <button class="btn-main">
       <a
         target="_blank"
-        href="https://go.girlguiding.org.uk/join-us/join-as-member/"
+        href="https://go.girlguiding.org.uk/join-us/join-as-volunteer/"
         >Let's get you started!</a
       >
     </button>
