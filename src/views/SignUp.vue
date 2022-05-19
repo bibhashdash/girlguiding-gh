@@ -303,7 +303,7 @@ export default {
 .signup-bi {
   margin-right: 1rem;
   color: #c40064;
-  font-size: 1;
+  font-size: 1rem;
 }
 .signup-cards-container {
   margin-bottom: 2rem;
