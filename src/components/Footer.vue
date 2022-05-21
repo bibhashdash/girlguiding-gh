@@ -41,10 +41,7 @@
     </div>
     <div class="contact-info">
       <h3>Contact</h3>
-      <div class="contact-info-slot">
-        <i class="bi footer-bi bi-telephone"></i>
-        <p>+44 01234 456789</p>
-      </div>
+
       <div class="contact-info-slot">
         <i class="bi footer-bi bi-envelope"></i>
         <p>email@domain.com</p>
@@ -103,6 +100,7 @@ footer {
   font-size: 1rem;
   text-align: start;
   color: #fff;
+  font-weight: 700;
 }
 .footer-nav-link {
   text-decoration: none;
