@@ -72,11 +72,11 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/gallery">Gallery</router-link>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <router-link class="nav-link" to="/resources"
               >Resources</router-link
             >
-          </li>
+          </li> -->
           <li class="nav-item">
             <router-link class="nav-link" to="/volunteer"
               >Volunteer</router-link

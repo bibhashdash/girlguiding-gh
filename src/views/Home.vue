@@ -132,22 +132,22 @@
     <div class="gallery-preview">
       <img
         class="gallery-preview-image"
-        src="../assets/images/gallery-placeholder-1.jpg"
+        src="../assets/images/gallery1.jpeg"
         alt=""
       />
       <img
         class="gallery-preview-image"
-        src="../assets/images/gallery-placeholder-2.jpg"
+        src="../assets/images/gallery5.jpeg"
         alt=""
       />
       <img
         class="gallery-preview-image"
-        src="../assets/images/gallery-placeholder-3.jpg"
+        src="../assets/images/gallery4.jpeg"
         alt=""
       />
       <img
         class="gallery-preview-image"
-        src="../assets/images/gallery-placeholder-4.jpg"
+        src="../assets/images/gallery6.jpeg"
         alt=""
       />
     </div>
@@ -278,8 +278,9 @@ export default {
   font-weight: bold;
 }
 .gallery-preview {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 .gallery-preview-image {
   width: 100%;
@@ -331,8 +332,10 @@ export default {
   }
   .section-gallery {
     padding: 5%;
+    /* box-shadow: none; */
   }
   .gallery-preview {
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -347,6 +350,9 @@ export default {
   }
   .section-testimonials {
     padding: 10% 15%;
+  }
+  .gallery-preview {
+    width: 60%;
   }
 }
 @media all and (min-width: 1200px) {
