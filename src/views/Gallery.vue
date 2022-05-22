@@ -1,6 +1,6 @@
 <template>
   <div class="hero-secondary">
-    <h1>Gallery</h1>
+    <h1>Photo Gallery</h1>
   </div>
   <div class="gallery-grid">
     <img class="gallery-image" src="../assets/images/gallery1.jpeg" alt="" />
