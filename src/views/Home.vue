@@ -291,20 +291,22 @@ export default {
     padding: 5%;
   }
   .cards-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
     width: 100%;
     padding: 0 10%;
   }
   .unit-card {
     margin: 0;
+    width: 100%;
   }
   .unit-card-logo {
-    width: 240px;
+    width: 100%;
   }
   .btn-cards {
-    width: 90%;
+    width: 100%;
   }
   .section-briefs {
     padding: 5%;
@@ -358,6 +360,10 @@ export default {
 @media all and (min-width: 1200px) {
   .section-cards {
     padding: 5%;
+  }
+  .unit-card {
+    margin: 0;
+    width: 80%;
   }
   .section-briefs {
     padding: 1% 15%;

@@ -67,9 +67,9 @@
       </p>
     </div>
   </section>
-  <section class="section section-cards section-howto">
+  <section class="section section-cards section-howto section-volunteer-howto">
     <h2>How to join</h2>
-    <div class="cards-container signup-cards-container">
+    <div class="cards-container volunteer-signup-cards-container">
       <div class="signup-card">
         <div class="signup-card-title">
           <i class="bi signup-bi bi-envelope-open"></i>
@@ -105,7 +105,7 @@
         </p>
       </div>
     </div>
-    <p>Ready?</p>
+    <p class="ready">Ready?</p>
     <button class="btn-main">
       <a
         target="_blank"
@@ -344,6 +344,9 @@ export default {
   font-size: 1rem;
   font-weight: bold;
 }
+.volunteer-signup-cards-container {
+  margin-bottom: 2rem;
+}
 @media all and (min-width: 768px) {
   .volunteer-page-cards {
     padding: 10% 5%;
@@ -365,6 +368,10 @@ export default {
   }
   .volunteer-card p {
     width: 85%;
+  }
+  .volunteer-signup-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media all and (min-width: 992px) {

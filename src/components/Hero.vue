@@ -80,6 +80,7 @@ form {
   color: #fff;
   border: none;
   border-radius: 0 8px 8px 0;
+  font-weight: bold;
 }
 .btn-hero:hover {
   background-color: #211c4f !important;

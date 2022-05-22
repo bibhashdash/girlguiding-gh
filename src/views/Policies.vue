@@ -5,7 +5,7 @@
       Follow the links below to access our various policies that underpin the
       work we do at GirlGuiding Goole and Howdenshire.
     </p>
-    <div class="section section-cards">
+    <div class="section section-cards policies-cards">
       <div class="policies-cards-container">
         <div class="policies-card">
           <img src="../assets/images/gdpr.png" alt="" />
@@ -107,11 +107,15 @@ export default {
     width: 100%;
     text-align: center;
   }
+  .policies-cards {
+    padding: 0;
+  }
   .policies-cards-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
+    /* padding: 0 10%; */
   }
   .policies-card {
     padding: 5%;
@@ -127,6 +131,18 @@ export default {
     max-height: 135px;
     width: auto;
     align-self: center;
+  }
+}
+@media all and (min-width: 1200px) {
+  .policies-cards {
+    padding: 10%;
+  }
+  .policies-cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    /* padding: 0 10%; */
   }
 }
 </style>

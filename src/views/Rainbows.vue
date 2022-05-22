@@ -5,26 +5,29 @@
     </div>
     <UnitBrief :unitBrief="unitBrief" />
     <div class="unit-subdivisions">
-      <UnitSubdivisionCard
-        :location="location1"
-        :ageRange="ageRange1"
-        :schedule="schedule1"
-      />
-      <UnitSubdivisionCard
-        :location="location2"
-        :ageRange="ageRange2"
-        :schedule="schedule2"
-      />
-      <UnitSubdivisionCard
-        :location="location2"
-        :ageRange="ageRange2"
-        :schedule="schedule2"
-      />
-      <UnitSubdivisionCard
-        :location="location2"
-        :ageRange="ageRange2"
-        :schedule="schedule2"
-      />
+      <h2>Unit sections</h2>
+      <div class="unit-subdivisions-cards-grid">
+        <UnitSubdivisionCard
+          :location="location1"
+          :ageRange="ageRange1"
+          :schedule="schedule1"
+        />
+        <UnitSubdivisionCard
+          :location="location2"
+          :ageRange="ageRange2"
+          :schedule="schedule2"
+        />
+        <UnitSubdivisionCard
+          :location="location2"
+          :ageRange="ageRange2"
+          :schedule="schedule2"
+        />
+        <UnitSubdivisionCard
+          :location="location2"
+          :ageRange="ageRange2"
+          :schedule="schedule2"
+        />
+      </div>
     </div>
     <section class="section section-fullwidth-cta">
       <FullWidthCTA
@@ -82,10 +85,26 @@ export default {
   width: 100%;
   padding: 10% 5%;
 }
+.unit-subdivisions h2 {
+  font-weight: bold;
+}
+.unit-subdivisions-cards-grid {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
 @media all and (min-width: 576px) {
   .unit-subdivisions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media all and (min-width: 768px) {
+  .unit-subdivisions-cards-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
 }
 @media all and (min-width: 992px) {
@@ -94,10 +113,10 @@ export default {
   }
 }
 @media all and (min-width: 1200px) {
-  .unit-subdivisions {
+  .unit-subdivisions-cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 5% 15%;
+    padding: 5%;
   }
 }
 </style>

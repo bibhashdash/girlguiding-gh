@@ -5,26 +5,29 @@
     </div>
     <UnitBrief :unitBrief="unitBrief" />
     <div class="unit-subdivisions">
-      <UnitSubdivisionCard
-        :location="location1"
-        :ageRange="ageRange1"
-        :schedule="schedule1"
-      />
-      <UnitSubdivisionCard
-        :location="location2"
-        :ageRange="ageRange2"
-        :schedule="schedule2"
-      />
-      <UnitSubdivisionCard
-        :location="location2"
-        :ageRange="ageRange2"
-        :schedule="schedule2"
-      />
-      <UnitSubdivisionCard
-        :location="location2"
-        :ageRange="ageRange2"
-        :schedule="schedule2"
-      />
+      <h2>Unit sections</h2>
+      <div class="unit-subdivisions-cards-grid">
+        <UnitSubdivisionCard
+          :location="location1"
+          :ageRange="ageRange1"
+          :schedule="schedule1"
+        />
+        <UnitSubdivisionCard
+          :location="location2"
+          :ageRange="ageRange2"
+          :schedule="schedule2"
+        />
+        <UnitSubdivisionCard
+          :location="location2"
+          :ageRange="ageRange2"
+          :schedule="schedule2"
+        />
+        <UnitSubdivisionCard
+          :location="location2"
+          :ageRange="ageRange2"
+          :schedule="schedule2"
+        />
+      </div>
     </div>
     <section class="section section-fullwidth-cta">
       <FullWidthCTA

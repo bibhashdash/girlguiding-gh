@@ -90,7 +90,7 @@ export default {
         "Subdeck in here over 2 decks pointing to how people can register their interest below",
       imagesrc: require("../assets/images/leader.png"),
       fullWidthCTAtext:
-        "A girguides is leader is someone who can be described in a few words like this with a big button below to get them to volunteer",
+        "A girlguides is leader is someone who can be described in a few words like this with a big button below to get them to volunteer",
       fullWidthCTAButtonText: "Volunteer",
       leaderName1: "Name 1",
       leaderUnits1: "Brownies, Rainbows",

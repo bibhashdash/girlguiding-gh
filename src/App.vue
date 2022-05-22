@@ -44,6 +44,10 @@ export default {
 .btn-main a {
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
+}
+.btn-main {
+  font-weight: bold;
 }
 h2 {
   text-decoration: underline;

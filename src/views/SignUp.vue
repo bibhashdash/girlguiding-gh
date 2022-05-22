@@ -70,7 +70,7 @@
         </p>
       </div>
     </div>
-    <p>Ready?</p>
+    <p class="ready">Ready?</p>
     <button class="btn-main">
       <a
         target="_blank"
@@ -93,7 +93,7 @@
             aria-expanded="true"
             aria-controls="collapseOne"
           >
-            My child isn’t old enough yet, can I apply anyway?
+            My child isn't old enough yet, can I apply anyway?
           </button>
         </h2>
         <div
@@ -317,6 +317,9 @@ export default {
   font-size: 1rem;
   font-weight: bold;
 }
+.ready {
+  font-weight: bold;
+}
 .section-faq {
   padding: 10% 5%;
   display: flex;
@@ -368,8 +371,7 @@ export default {
   }
   .signup-cards-container {
     display: flex;
-    justify-content: space-around;
-    padding: 0;
+    flex-direction: column;
   }
 
   .signup-bi {
@@ -405,6 +407,11 @@ export default {
   }
   .section-howto {
     padding: 5% 10%;
+  }
+  .signup-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
   }
 }
 @media all and (min-width: 1200px) {
