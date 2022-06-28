@@ -261,7 +261,7 @@ export default {
       headline: "Ready to discover your full potential? Join us!",
       subdeck:
         "Subdeck in here over 2 decks pointing to how people can register their interest below",
-      imagesrc: require("../assets/images/outdoors.png"),
+      imagesrc: require("../assets/images/girlguides_1.jpg"),
     };
   },
 };

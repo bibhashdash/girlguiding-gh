@@ -295,7 +295,7 @@ export default {
       headline: "Volunteer with us and help change lives!",
       subdeck:
         "Subdeck in here over 2 decks pointing to how people can register their interest below",
-      imagesrc: require("../assets/images/camp.jpg"),
+      imagesrc: require("../assets/images/rainbows_2.png"),
     };
   },
 };
